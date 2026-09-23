@@ -17,7 +17,8 @@ load_dotenv(find_dotenv())
 
 #Same thing as from connect file only difference is 
 #when the model is loaded Database will be save in CACHE
-DB_FAISS_PATH="vectorstore/db_faiss"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_FAISS_PATH = os.path.join(BASE_DIR, "vectorstore", "db_faiss")
 @st.cache_resource
 def get_vectorstore():
     embedding_model=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
