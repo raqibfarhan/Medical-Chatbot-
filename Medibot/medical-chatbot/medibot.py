@@ -135,7 +135,7 @@ def main():
             st.session_state.messages = []
             st.rerun()
 
-        st.caption("Powered by LangChain · FAISS · Groq")
+        st.caption("👨‍💻 Built by Abdu Raqib Hidayathulla")
 
     # ---------------- Header ----------------
     st.title("🩺 MediBot")
