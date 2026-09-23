@@ -44,6 +44,12 @@ def load_llm(huggingface_repo_id, HF_TOKEN):
 def main():
     st.title("Ask Chatbot!")
 
+    st.warning(
+        "⚠️ **Disclaimer:** MediBot is for informational and educational purposes only. "
+        "It is **not** a substitute for professional medical advice, diagnosis, or treatment. "
+        "Always consult a qualified healthcare provider for any medical concerns."
+    )
+
     if 'messages' not in st.session_state:   # If message is not in Session_state thenn create a empty list[]
         st.session_state.messages = []       # This will Save the previous history chat and keep running
 
