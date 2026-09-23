@@ -1,5 +1,9 @@
  🩺 MediBot – AI-Powered Medical Chatbot
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://medibot-health-ai.streamlit.app/)
+
+> 🚀 **Live Demo:** **[medibot-health-ai.streamlit.app](https://medibot-health-ai.streamlit.app/)** — try it right now, no setup needed!
+
 **MediBot** is an interactive medical chatbot powered by **Large Language Models (LLMs)**, **LangChain**, and **FAISS**.
 It allows users to ask medical questions and get context-aware, accurate responses with traceable sources extracted from a trusted medical encyclopedia.
 
