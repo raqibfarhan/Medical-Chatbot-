@@ -59,19 +59,34 @@ The application is built with a user-friendly **Streamlit interface**, uses **Gr
 ---
 
 ## 🚀 Getting Started
-pip install -r requirements.txt
-3. Add API Keys
-Create a .env file in the root directory:
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/Medical-Chatbot.git
+cd Medical-Chatbot
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Add API Keys
+Create a `.env` file in the root directory:
+```
 GROQ_API_KEY=your_groq_api_key
 HF_TOKEN=your_huggingface_token  # Optional if using HuggingFace
+```
 
-4. Prepare the Vectorstore
-
+### 4. Prepare the Vectorstore
+```bash
 python create_memory_for_llm.py
+```
 
-5. Run the Chatbot UI
+### 5. Run the Chatbot UI
+```bash
 streamlit run medibot.py
+```
 💬 Example Output
 User Prompt:
 
@@ -81,14 +96,11 @@ The best chance for a surgical cure is usually with the first operation...
 Source Docs:
 
 [Document(metadata={'source': 'data/The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf', 'page': 26}, ...)]
-📌 To-Do List
- File upload for custom documents
-
- Source highlighting in document text
-
- Result formatting improvements
-
- Deployment on Streamlit Cloud or HuggingFace Spaces
+## 📌 To-Do List
+- [ ] File upload for custom documents
+- [ ] Source highlighting in document text
+- [ ] Result formatting improvements
+- [x] Deployment on Streamlit Cloud
 
 🧑‍💻 Author
 Abdu Raqib Hidayathulla
